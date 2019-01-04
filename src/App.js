@@ -1,31 +1,19 @@
-//import React, { Component } from 'react';
 import React from 'react';
-
-//class App extends Component {
-//  render() {
-//    return (
-//      <React.Fragment>
-//        <label htmlFor="bar">bar</label>
-//        <input type="text" onClick={() => {console.log('I am clicked.')}} />
-//      </React.Fragment>
-//    )
-//  }
-//}
 
 const App = () => {
   return (
     <div>
-      <Cat />
-      <Cat />
-      <Cat />
-      <Cat />
-      <Cat />
+      <User name={"Ichiro"} age={10}/>
+      <User name={'Jiro'} age={8}/>
+      <User name={'Saburo'} age={6}/>
+      <User name={'Shiro'} age={4}/>
+      <User name={'Goro'} age={2}/>
     </div>
   );
 }
 
-const Cat = () => {
-  return <div>Meow!</div>
+const User = (props) => {
+  return <div>Hi, I am {props.name}, and {props.age} years old!</div>
 }
 
 export default App;
